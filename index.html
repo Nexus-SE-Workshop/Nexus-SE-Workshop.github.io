@@ -3,124 +3,177 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="NEXUS 2027 — The 1st International Nexus Workshop on Human Roles in Software Engineering.">
+  <meta name="description" content="NEXUS 2027 — The 1st International Nexus Workshop on Human Roles in Software Engineering. A presentation-centered workshop on how humans and AI share the work of building software.">
   <title>NEXUS 2027 — Human Roles in Software Engineering</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23142b4d'/%3E%3Ccircle cx='10' cy='11' r='3.2' fill='%23ff8a5c'/%3E%3Crect x='19' y='7.8' width='6.4' height='6.4' rx='1.4' fill='%235cc8ff'/%3E%3Ccircle cx='16' cy='23' r='3.2' fill='%23fff'/%3E%3Cpath d='M10 11 22 11M10 11 16 23M22 11 16 23' stroke='%23fff' stroke-opacity='.55' stroke-width='1.4'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <div class="masthead">
-      <a class="site-name" href="#top">NEXUS 2027</a>
-      <p>The 1st International Nexus Workshop on Human Roles in Software Engineering</p>
+
+  <header class="topbar" data-header>
+    <div class="topbar-inner">
+      <a class="brand" href="#top" aria-label="NEXUS 2027 home">
+        <span>NEXUS<b>2027</b></span>
+      </a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav" data-menu>
+        <span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#about">About</a>
+        <a href="#call">Call for Submissions</a>
+        <a href="#submission">Submit</a>
+        <a href="#dates">Dates</a>
+        <a href="#organizers">Organizers</a>
+      </nav>
     </div>
-    <button class="menu-button" aria-expanded="false" aria-controls="site-nav" data-menu>Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation" data-nav>
-      <a href="#about">About</a>
-      <a href="#call">Call for Papers</a>
-      <a href="#submission">Submission</a>
-      <a href="#after-acceptance">After Acceptance</a>
-      <a href="#dates">Important Dates</a>
-      <a href="#organizers">Organizers</a>
-    </nav>
   </header>
 
-  <main id="main" class="content">
-    <section id="top" class="introduction">
-      <h1>The 1st International Nexus Workshop on Human Roles in Software Engineering</h1>
-      <p>NEXUS 2027 explores the roles of humans in software engineering and their evolving relationships with technology and with one another.</p>
+  <main id="main">
+    <section id="top" class="hero" aria-label="Introduction">
+      <canvas class="hero-canvas" data-nexus aria-hidden="true"></canvas>
     </section>
 
-    <section id="about">
-      <h2>About the Workshop</h2>
-      <p>Humans elicit requirements, build and test systems, share domain knowledge, exercise judgment, and make creative decisions. Large language models and autonomous agents are changing where those responsibilities begin and end.</p>
-      <p>NEXUS 2027 creates a focused forum for studying that shifting boundary: what people uniquely contribute today, how human–AI and human–human relationships change, and whether some activities inherently require human involvement.</p>
+    <section class="title-band">
+      <div class="wrap">
+        <p class="eyebrow">The 1st International Nexus Workshop on</p>
+        <h1>Human Roles in Software Engineering</h1>
+        <p class="edition">NEXUS 2027</p>
+        <ul class="facts">
+          <li><span>Deadline</span>11 February 2027 (AoE)</li>
+          <li><span>Venue</span>To be announced</li>
+        </ul>
+        <div class="cta">
+          <a class="button primary" href="#call">Call for Submissions</a>
+          <a class="button" href="#dates">Important Dates</a>
+        </div>
+      </div>
     </section>
 
-    <section id="call">
-      <h2>Call for Papers</h2>
-      <p>NEXUS 2027 welcomes contributions from researchers, students, and practitioners in software engineering, artificial intelligence, human-computer interaction, and related areas. We invite:</p>
-      <ul>
-        <li>Original research and empirical studies on human roles in software engineering.</li>
-        <li>Innovative ideas and well-argued perspectives on how human work may evolve.</li>
-        <li>Industry experience and practical reports from AI-assisted software development.</li>
-      </ul>
-
-      <h3>Previously published and unpublished work</h3>
-      <p><strong>Unpublished work.</strong> Original and unpublished work is welcome. Authors may choose single-blind or double-blind review. After acceptance, authors may optionally pursue the journal publication opportunity described below.</p>
-      <p><strong>Previously published work.</strong> Previously published work is also welcome. The submission must clearly identify the original publication. It will be reviewed through the same presentation-centered process using single-blind review and, if accepted, may be presented at the workshop but is not eligible for the journal publication opportunity.</p>
-
-      <h3>Topics of interest</h3>
-      <p>Topics include, but are not limited to:</p>
-      <ul>
-        <li>Human factors across requirements, design, development, testing, and maintenance.</li>
-        <li>Knowledge, expertise, judgment, creativity, cognition, well-being, and skills.</li>
-        <li>Division of labor, oversight, validation, trust, and autonomous engineering agents.</li>
-        <li>Communication and collaboration among developers, users, and stakeholders.</li>
-        <li>Developer experience, productivity, education, and the evolving profession.</li>
-      </ul>
+    <section id="about" class="section">
+      <div class="wrap narrow">
+        <h2>About</h2>
+        <p class="lead">As large language models and AI agents take on requirements, coding, testing, and repair, the roles humans play in software engineering keep evolving.</p>
+        <p>NEXUS 2027 brings together researchers, students, and practitioners from software engineering, AI, HCI, and related areas to discuss what humans uniquely contribute, how human–AI and human–human relationships are changing, and where human roles are heading.</p>
+        <p class="callout"><strong>A presentation-centered workshop.</strong> Submissions are reviewed primarily on a recorded presentation rather than a written paper.</p>
+      </div>
     </section>
 
-    <section id="submission">
-      <h2>Submission Requirements</h2>
-      <p>A professional video production is not expected. Reviewers will focus on the research and on clear, complete communication.</p>
-
-      <h3>Required: recorded presentation</h3>
-      <p>Submit a self-contained recorded presentation of up to 20 minutes that communicates the problem, core contributions, evidence, and limitations.</p>
-      <ul>
-        <li>MP4 using the H.264 codec</li>
-        <li>Resolution up to 1080p</li>
-        <li>Maximum file size of 600 MB</li>
-        <li>Presentation slides in PDF format</li>
-      </ul>
-
-      <h3>Optional: extended abstract</h3>
-      <p>Authors may submit an extended abstract of up to four pages, excluding references, as a concise written summary for reviewers.</p>
-
-      <h3>Optional: supplementary materials</h3>
-      <p>Authors may also submit a full manuscript, datasets, code, instruments, or replication packages that support the review.</p>
-
-      <h3>Review and submission system</h3>
-      <p>Authors may choose single-blind or double-blind review. Every submission will receive at least three reviews based on relevance, originality, soundness, clarity, and significance.</p>
-      <p>Submissions will be managed through HotCRP. The workshop-specific link will be posted here before submissions open on 1 December 2026.</p>
+    <section id="call" class="section tint">
+      <div class="wrap narrow">
+        <h2>Call for Submissions</h2>
+        <p class="section-intro">We welcome original research, new ideas and perspectives, and industry experience reports on human roles in software engineering. Previously published work is also welcome.</p>
+        <h3 class="center">Topics include, but are not limited to</h3>
+        <ul class="topic-list">
+          <li>Human factors in requirements engineering, software design, development, testing, and maintenance</li>
+          <li>Human knowledge, expertise, judgment, and creativity in software engineering, and their value</li>
+          <li>Human–AI interaction and collaboration, including the division of labor between developers and AI agents</li>
+          <li>Human oversight, validation, and trust in AI-generated artifacts and autonomous software engineering agents</li>
+          <li>Socio-technical aspects of communication and collaboration among developers, users, and other stakeholders</li>
+          <li>Developer experience, productivity, skills, cognition, and well-being in AI-assisted software development</li>
+          <li>Software engineering education and the evolving roles of software engineers</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="after-acceptance">
-      <h2>After Acceptance</h2>
-      <h3>Journal opportunity</h3>
-      <p>Authors of accepted unpublished work will be offered the opportunity to develop a full paper for <cite>Software Engineering Nexus</cite>. This opportunity is entirely optional: authors are not required to submit to or publish in the journal and may participate in the workshop without pursuing it. For authors who choose this route, publication is guaranteed after the journal's subsequent paper review and revision process. Under the journal's currently announced plan, each published paper receives a USD 500 honorarium and the USD 1,600 APC is waived. See the <a href="https://www.sciencedirect.com/journal/software-engineering-nexus" target="_blank" rel="noreferrer">journal website</a>.</p>
-
-      <h3>Best Presentation Award</h3>
-      <p>All on-site participants will be invited to vote anonymously for the presentation they find clearest, most engaging, and most effective in stimulating new thoughts and discussion. The winner will receive a certificate and a monetary prize.</p>
+    <section id="submission" class="section">
+      <div class="wrap">
+        <h2>How to Submit</h2>
+        <div class="grid three">
+          <article class="card required">
+            <span class="badge">Required</span>
+            <h3>Recorded presentation</h3>
+            <p>Up to <strong>20 minutes</strong>, self-contained. No professional production needed.</p>
+            <ul class="specs">
+              <li>MP4 (H.264)</li>
+              <li>≤ 1080p</li>
+              <li>≤ 600 MB</li>
+              <li>+ slides (PDF)</li>
+            </ul>
+          </article>
+          <article class="card">
+            <span class="badge optional">Optional</span>
+            <h3>Extended abstract</h3>
+            <p>Up to <strong>4 pages</strong>, excluding references.</p>
+          </article>
+          <article class="card">
+            <span class="badge optional">Optional</span>
+            <h3>Supplementary materials</h3>
+            <p>Manuscript, data, code, or replication package.</p>
+          </article>
+        </div>
+        <ul class="fine-print">
+          <li>Authors may choose either single-blind or double-blind review.</li>
+          <li>Submissions of previously published work must clearly identify the original publication.</li>
+          <li>Submissions will be managed through <strong>HotCRP</strong>. The submission link will be posted here when submissions open.</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="dates">
-      <h2>Important Dates</h2>
-      <p>All deadlines are 23:59:59 UTC−12 (Anywhere on Earth).</p>
-      <table>
-        <tbody>
-          <tr><th scope="row">Submission opens</th><td>1 December 2026</td></tr>
-          <tr><th scope="row">Submission deadline</th><td>11 February 2027</td></tr>
-          <tr><th scope="row">Notification</th><td>18 March 2027</td></tr>
-          <tr><th scope="row">Final materials</th><td>8 April 2027</td></tr>
-        </tbody>
-      </table>
+    <section id="dates" class="section tint">
+      <div class="wrap narrow">
+        <h2>Important Dates</h2>
+        <p class="section-intro">All deadlines are Anywhere on Earth (UTC−12).</p>
+        <ol class="timeline" data-timeline>
+          <li data-date="2026-12-01"><time datetime="2026-12-01">1 Dec 2026</time><span>Submission opens</span></li>
+          <li data-date="2027-02-11" class="key"><time datetime="2027-02-11">11 Feb 2027</time><span>Submission deadline</span></li>
+          <li data-date="2027-03-18"><time datetime="2027-03-18">18 Mar 2027</time><span>Notification</span></li>
+          <li data-date="2027-04-08"><time datetime="2027-04-08">8 Apr 2027</time><span>Final materials</span></li>
+        </ol>
+      </div>
     </section>
 
-    <section id="organizers">
-      <h2>Organizers</h2>
-      <ul class="organizers">
-        <li><strong>Jingling Sun</strong>, University of Electronic Science and Technology of China — <a href="mailto:jlsun@uestc.edu.cn">jlsun@uestc.edu.cn</a></li>
-        <li><strong>Chengyu Zhang</strong>, Loughborough University — <a href="mailto:c.zhang4@lboro.ac.uk">c.zhang4@lboro.ac.uk</a></li>
-        <li><strong>Yihao Huang</strong>, East China Normal University — <a href="mailto:huangyihao@sei.ecnu.edu.cn">huangyihao@sei.ecnu.edu.cn</a></li>
-      </ul>
+    <section id="after-acceptance" class="section">
+      <div class="wrap narrow">
+        <h2>After Acceptance</h2>
+        <article class="card feature">
+          <h3>Optional journal path</h3>
+          <p>Accepted unpublished work is pre-registered for publication as a full paper in <a href="https://www.sciencedirect.com/journal/software-engineering-nexus" target="_blank" rel="noreferrer"><cite>Software Engineering Nexus</cite></a>, subject to the journal's review and revision.</p>
+          <p class="perk"><span>Honorarium</span> for each published paper · <span>USD 1,600</span> article publishing charge waived<small>Under the journal's <a href="https://www.sciencedirect.com/journal/software-engineering-nexus/publish/open-access-options" target="_blank" rel="noreferrer">currently announced plan</a>.</small></p>
+        </article>
+      </div>
+    </section>
+    <section id="organizers" class="section tint">
+      <div class="wrap">
+        <h2>Organizers</h2>
+        <div class="people">
+          <a class="person" href="https://jinglingsun.github.io/" target="_blank" rel="noreferrer">
+            <img class="avatar" src="images/organizers/jingling-sun.jpg" alt="Photo of Jingling Sun" width="84" height="84" loading="lazy">
+            <h3>Jingling Sun</h3>
+            <p>University of Electronic Science and Technology of China</p>
+          </a>
+          <a class="person" href="https://chengyuzhang.com/" target="_blank" rel="noreferrer">
+            <img class="avatar" src="images/organizers/chengyu-zhang.jpg" alt="Photo of Chengyu Zhang" width="84" height="84" loading="lazy">
+            <h3>Chengyu Zhang</h3>
+            <p>Loughborough University</p>
+          </a>
+          <a class="person" href="https://people.inf.ethz.ch/~sverrirt/" target="_blank" rel="noreferrer">
+            <img class="avatar" src="images/organizers/sverrir-thorgeirsson.jpg" alt="Photo of Sverrir Thorgeirsson" width="84" height="84" loading="lazy">
+            <h3>Sverrir Thorgeirsson</h3>
+            <p>ETH Zurich</p>
+          </a>
+          <a class="person" href="https://huang-yihao.github.io/" target="_blank" rel="noreferrer">
+            <img class="avatar" src="images/organizers/yihao-huang.jpg" alt="Photo of Yihao Huang" width="84" height="84" loading="lazy">
+            <h3>Yihao Huang</h3>
+            <p>East China Normal University</p>
+          </a>
+          <a class="person" href="https://earlbarr.com/" target="_blank" rel="noreferrer">
+            <img class="avatar" src="images/organizers/earl-barr.jpg" alt="Photo of Earl T. Barr" width="84" height="84" loading="lazy">
+            <h3>Earl T. Barr</h3>
+            <p>University College London</p>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2027 NEXUS Workshop</p>
+  <footer class="footer">
+    <div class="wrap">
+      <p><strong>NEXUS 2027</strong> · The 1st International Nexus Workshop on Human Roles in Software Engineering</p>
+      <p>Questions? Contact <a href="mailto:c.zhang4@lboro.ac.uk">Chengyu Zhang</a>.</p>
+    </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
-
